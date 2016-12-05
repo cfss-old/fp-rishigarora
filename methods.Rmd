@@ -91,3 +91,5 @@ Cell 3 | Cell 4
 
 
 INFORMATION ON FACULTY CLASSIFICATION: https://provost.uchicago.edu/handbook/academic-appointments/ranks-statute-11
+ACADEMIC DEPARTMENTS: http://www.uchicago.edu/academics/departments/
+FULL FACULTY IN EACH DEPARTMENT: https://directory.uchicago.edu/organizations/search

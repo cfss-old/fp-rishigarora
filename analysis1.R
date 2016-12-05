@@ -49,10 +49,21 @@ tenurestatus <- facultylist %>%
   mutate(Position = fct_collapse(Position,
     "Has Tenure" = c("Professor Emeritus", "Professor", "Named Professor", "Distinguished Service Professor", "Executive Director", "Visiting Professor", "Associate Professor"),
     "Tenure Track" = c("Clinical Professor", "Assistant Professor", "Assistant Clinical Professor"),
-    "Non-Tenure" = c("Visiting Lecturer", "Senior Lecturer", "Provost's Postdoctoral Scholar", "Lecturer", "Harper Fellow"
-  ))) 
+    "Non-Tenure" = c("Visiting Lecturer", "Senior Lecturer", "Provost's Postdoctoral Scholar", "Lecturer", "Harper Fellow")
+  )) 
 
 ## combine departments based on division
+division <- facultylist %>%
+  mutate(Department = fct_collapse(Department,
+    "Biological Sciences" = c(),
+    "Physical Sciences" = c(),
+    "Social Sciences" = c(),
+    "Humanities" = c(),
+    "Professional" = c()
+  )) 
+
+
+
 biological sciences
 humanities
 social sciences
@@ -67,3 +78,6 @@ professional schools (law, med, ssa, )
 ### group by sciences vs humanities vs social science 
 ### group by tenure no tenure (include clinical in no tenure, emeritus in tenure)
 ### experiment by language - tendency for some to participate vs not? regression
+### logistic model
+  ### cross validate
+### shiny app for searchable faculty
