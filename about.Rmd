@@ -1,5 +1,8 @@
 ---
-title: "About This Website"
+title: "About"
 ---
 
-More about this website.
+This website fulfills the final project requirements for [CFSS_____](). 
+
+[Rishi](link profile on uchicago website) is a second-year PhD student in the Department of Sociology at the University of Chicago. 
+

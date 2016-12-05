@@ -1,0 +1,88 @@
+---
+title: "Methodology"
+---
+
+__Data__
+
+The tidy dataset used for this analysis includes the position and department affiliation of 392 faculty signatories (as of 12/03/16). Where faculty listed multiple department affiliations, in almost all cases I went with the first one listed.  
+
+The data (names and affiliation information) was copied into excel from the original [letter](https://docs.google.com/forms/d/e/1FAIpQLSdozFBhNzeHZPQAywaxG9YHOx9BYBxL3dxPyDXFPV6fXIbuqg/viewform?c=0&w=1) posted online and was cleaned before being imported into RStudio for analysis. Department affiliations and position categories were combined where appropriate (e.g. neurobiology was coded as biology and uniquely named professorships were binned into a single category).
+
+***
+
+__Appendix A: Signatory Positions and Categories__ 
+
+_Positions_
+
+* Harper Fellow 
+* Provost's Postdoctoral Scholar 
+* Lecturer 
+* Senior Lecturer 
+* Assistant Clinical Professor 
+* Clinical Professor 
+* Assistant Professor 
+* Associate Professor 
+* Professor 
+* Distinguished Service Professor 
+* Named Professor 
+* Professor Emeritus 
+* Visiting Lecturer 
+* Visiting Professor 
+* Executive Director 
+
+_Departments_ 
+
+* English                                     
+* Comparative Human Development               
+* Visual Arts                                 
+* History                                     
+* Divinity                                    
+* Philosophy                                  
+* Social Sciences Administration              
+* Comparative Literature                      
+* Creative Writing                            
+* Law                                         
+* Medicine                                    
+* Art History                                 
+* Political Science                           
+* Anthropology                                
+* Romance Languages and Literatures           
+* Linguistics                                 
+* Human Genetics                              
+* Music                                       
+* Humanities                                  
+* Social Sciences Division                    
+* Sociology                                   
+* South Asian Languages and Literatures       
+* Near East Languages and Civilizations       
+* Psychiatry                                  
+* Computer Science                            
+* Physics                                     
+* Statistics                                  
+* East Asian Languages and Civilizations      
+* Cinema and Media Studies                    
+* Classics                                    
+* Germanic Studies                            
+* Slavic                                      
+* Social Thought                              
+* Young Center for Immigrant Children's Rights
+* Society of Fellows                          
+* French                                      
+* Business                                    
+* Biology                                     
+* Mathematics                                 
+* Psychology                                  
+* Institute for Molecular Engineering         
+* Human Rights                                
+* Public Policy                               
+
+***
+
+__Appendix B: __ 
+
+
+
+Table Header | Second Header
+------------- | -------------
+Table Cell | Cell 2
+Cell 3 | Cell 4 

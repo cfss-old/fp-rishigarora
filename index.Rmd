@@ -1,5 +1,18 @@
 ---
-title: "My Website"
+title: "An Inquiry into Faculty Activism"
 ---
 
-Hello, Website!
+Student activism is covered a lot
+Faculty activism less so
+
+Taking a recent petition as the departure point for the analysis, what factors influence faculty activism?
+  How does tenure influence it? 
+  How does department affiliation affect it? 
+
+Clear that some departments made a more concerted effort - forwarded through listservs
+
+Questions for future research: 
+  How does participation vary based on type of petition? 
+  What is the role of someone sending it through a faculty listserv? 
+
+  
