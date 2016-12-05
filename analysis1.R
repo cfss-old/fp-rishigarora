@@ -3,13 +3,13 @@ library(feather)
 library(ggplot2)
 library(knitr)
 library(plyr)
-library(purrr)
-library(rvest)
 library(tidyverse)
 
 
 ## load dataset from csv
 facultylist = read.csv("faculty.csv")
+write_feather(facultylist, "faculty_list.feather") 
+
 
 ## explore data and determine unique values 
 summary(facultylist)
@@ -25,58 +25,29 @@ ggplot(data = facultylist) +
   geom_count(mapping = aes(x = Position, y = Department))  
 
 # plot signatories by position
-ggplot(data = facultylist) +
-  geom_bar(mapping = aes(x = Position)) +
+facultylist %>%
+  mutate(Position = Position %>% fct_infreq() %>% fct_rev()) %>%
+  ggplot(aes(Position)) +
+  geom_bar() +
   coord_flip() + 
   theme_minimal() +
   labs(title="Faculty Signatories by Position", y="# of Signatories")  
 ggsave("plot_byposition.png", width = 5, height = 5)
 
 # plot signatories by department 
-ggplot(data = facultylist) +
-  geom_bar(mapping = aes(x = Department)) +
+facultylist %>%
+  mutate(Department = Department %>% fct_infreq() %>% fct_rev()) %>%
+  ggplot(aes(Department)) +
+  geom_bar() +
   coord_flip() + 
   theme_minimal() +
   labs(title="Faculty Signatories by Department", y="# of Signatories")  
 ggsave("plot_bydept.png", width = 5, height = 5)
 
-# REORDER = http://r4ds.had.co.nz/factors.html
-
-## combine positions based on level of job security
-library(forcats)
-
-tenurestatus <- facultylist %>%
-  mutate(Position = fct_collapse(Position,
-    "Has Tenure" = c("Professor Emeritus", "Professor", "Named Professor", "Distinguished Service Professor", "Executive Director", "Visiting Professor", "Associate Professor"),
-    "Tenure Track" = c("Clinical Professor", "Assistant Professor", "Assistant Clinical Professor"),
-    "Non-Tenure" = c("Visiting Lecturer", "Senior Lecturer", "Provost's Postdoctoral Scholar", "Lecturer", "Harper Fellow")
-  )) 
-
-## combine departments based on division
-division <- facultylist %>%
-  mutate(Department = fct_collapse(Department,
-    "Biological Sciences" = c(),
-    "Physical Sciences" = c(),
-    "Social Sciences" = c(),
-    "Humanities" = c(),
-    "Professional" = c()
-  )) 
-
-
-
-biological sciences
-humanities
-social sciences
-physical sciences 
-professional schools (law, med, ssa, )
 
 
 
 
-
-
-### group by sciences vs humanities vs social science 
-### group by tenure no tenure (include clinical in no tenure, emeritus in tenure)
 ### experiment by language - tendency for some to participate vs not? regression
 ### logistic model
   ### cross validate
