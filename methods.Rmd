@@ -86,3 +86,8 @@ Table Header | Second Header
 ------------- | -------------
 Table Cell | Cell 2
 Cell 3 | Cell 4 
+
+
+
+
+INFORMATION ON FACULTY CLASSIFICATION: https://provost.uchicago.edu/handbook/academic-appointments/ranks-statute-11
