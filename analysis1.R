@@ -12,6 +12,10 @@ write_feather(facultylist, "faculty_list.feather")
 
 
 ## explore data and determine unique values 
+facultylist %>%
+  head() %>% 
+  knitr::kable()
+
 summary(facultylist)
 unique(facultylist$Department) 
 unique(facultylist$Position) 

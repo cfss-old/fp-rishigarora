@@ -15,4 +15,19 @@ Questions for future research:
   How does participation vary based on type of petition? 
   What is the role of someone sending it through a faculty listserv? 
 
-  
+
+
+Has Tenure | Tenure Track | Non-Tenure | Not Listed
+------------- | ------------- | ------------- | -------------
+251 | 79 | 46 | 16
+
+
+
+I selected 6 departments from the range of formal academic divisions across the university: statistics, romance languages, philosophy, statistics, human genetics, computer science. 
+
+I created a dataset of all faculty from these departments using the university directory and coded whether or not the individual signed the letter. 
+
+
+
+
+

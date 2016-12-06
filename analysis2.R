@@ -43,12 +43,19 @@ division %>%
   labs(title="Faculty Signatories by Academic Division", y="# of Signatories")  
 ggsave("plot_bydivision.png", width = 5, height = 5)
 
+# show both together 
+tenurestatus %>%
+  mutate(Position = Position %>% fct_infreq() %>% fct_rev()) %>%
+  mutate(Department = Department %>% fct_infreq() %>% fct_rev()) %>%
+  ggplot(aes(x = Position, y = Department)) +
+  geom_count() +
+  theme_minimal() +
+  labs(title="Faculty Signatories by Department & Tenure Status")  
 
+write_csv(tenurestatus, "tenurestatus.csv")
 
-# REORDER = http://r4ds.had.co.nz/factors.html
-
-
-
+summary(tenurestatus$Position)
+summary(division$Position)
 
 
 
