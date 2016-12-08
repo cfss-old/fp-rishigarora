@@ -1,6 +1,5 @@
 ---
 title: "Analysis"
-author: "Rishi Arora"
 output: html_document
 ---
 

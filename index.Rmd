@@ -1,6 +1,5 @@
 ---
 title: "A Brief Inquiry into Faculty Activism"
-author: Rishi Arora
 output: html_document
 ---
   
