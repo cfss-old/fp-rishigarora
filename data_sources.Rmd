@@ -1,5 +1,5 @@
 ---
-title: "Methodology"
+title: "Data & Sources"
 ---
 
 __Data__
@@ -10,7 +10,7 @@ The data (names and affiliation information) was copied into excel from the orig
 
 ***
 
-__Appendix A: Signatory Positions and Categories__ 
+__Catalog__ 
 
 _Positions_
 
@@ -77,16 +77,6 @@ _Departments_
 * Public Policy                               
 
 ***
-
-__Appendix B: __ 
-
-
-
-Table Header | Second Header
-------------- | -------------
-Table Cell | Cell 2
-Cell 3 | Cell 4 
-
 
 
 
