@@ -1,7 +1,7 @@
 name: "facultyactivism"
 output_dir: "."
 navbar:
-  title: "A Brief Inquiry into Faculty Activism"
+  title: "An Inquiry into Faculty Activism"
   left:
     - text: "Analysis"
       href: analysis.html
