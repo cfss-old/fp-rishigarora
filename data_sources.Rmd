@@ -77,6 +77,8 @@ _Departments_
 ***
 
 Data Sources:
-["Letter to University of Chicago Administration Concerning Changes to U.S. Immigration Policy"](https://docs.google.com/forms/d/e/1FAIpQLSdozFBhNzeHZPQAywaxG9YHOx9BYBxL3dxPyDXFPV6fXIbuqg/viewform?c=0&w=1)
-[Tenure Status Classification](https://provost.uchicago.edu/handbook/academic-appointments/ranks-statute-11)
+["Letter to University of Chicago Administration Concerning Changes to U.S. Immigration Policy"](https://docs.google.com/forms/d/e/1FAIpQLSdozFBhNzeHZPQAywaxG9YHOx9BYBxL3dxPyDXFPV6fXIbuqg/viewform?c=0&w=1)  
+
+[Tenure Status Classification](https://provost.uchicago.edu/handbook/academic-appointments/ranks-statute-11)  
+
 [Deparment Faculty Rosters](https://directory.uchicago.edu/organizations/search)

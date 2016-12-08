@@ -1,9 +1,9 @@
 ---
-title: "A Brief Inquiry into Faculty Activism"
-author: Rishi Arora
+title: "Analysis"
+author: "Rishi Arora"
 output: html_document
 ---
-  
+
 ###Introduction
 On December 1, 2016, 390+ faculty members at the University of Chicago sent a [letter](https://docs.google.com/forms/d/e/1FAIpQLSdozFBhNzeHZPQAywaxG9YHOx9BYBxL3dxPyDXFPV6fXIbuqg/viewform?c=0&w=1) to Provost Diermeier and President Zimmer concerning the university's response to potential changes to U.S. immigration policy following Donald Trump's presidential election victory. It opens as follows: 
 
