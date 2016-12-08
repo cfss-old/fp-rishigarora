@@ -1,6 +1,6 @@
 # Rishi's Final Project
 
-This is the repository for all the scripts and files used to conduct the analysis and build the website for my final project.  
+This is the repository for all the scripts and files used to conduct the analysis and build the [website](https://uc-cfss.github.io/fp-rishigarora/index.html) for my final project.  
 
 Scripts
 
