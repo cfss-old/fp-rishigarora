@@ -36,8 +36,8 @@ tenurestatus %>%
   geom_bar() +
   theme_minimal() +
   coord_flip() + 
-  labs(title="Figure 3: Faculty Signatories by Tenure Status", y="# of Signatories")  
-ggsave("graphics/figure3.png")
+  labs(title="Figure 3: By Tenure Status", y="# of Signatories")  
+ggsave("graphics/figure3.png", width = 5, height = 5, units = c("in"))
 
 # grouped by division 
 division %>%
@@ -46,18 +46,19 @@ division %>%
   geom_bar() +
   theme_minimal() +
   coord_flip() + 
-  labs(title="Figure 4: Faculty Signatories by Academic Division", y="# of Signatories", x="Division")  
-ggsave("graphics/figure4.png")
+  labs(title="Figure 4: By Academic Division", y="# of Signatories", x="Division")  
+ggsave("graphics/figure4.png", width = 5, height = 5, units = c("in"))
 
 # show both together 
 tenurestatus %>%
   mutate(Position = Position %>% fct_infreq() %>% fct_rev()) %>%
   mutate(Department = Department %>% fct_infreq() %>% fct_rev()) %>%
-  ggplot(aes(x = Position, y = Department)) +
+  ggplot(aes(x = Position, y = Department )) +
   geom_count() +
   theme_minimal() +
-  labs(title="Figure 5: Faculty Signatories by Department & Tenure Status")  
-ggsave("graphics/figure5.png")
+  labs(title="Figure 5: By Division & Tenure Status")  
+ggsave("graphics/figure5.png", width = 8, height = 8, units = c("in"))
+
 
 # save data
 write_csv(tenurestatus, "data/tenurestatus.csv")

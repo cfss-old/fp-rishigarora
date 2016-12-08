@@ -49,7 +49,7 @@ facultylist %>%
   geom_bar() +
   coord_flip() + 
   theme_minimal() +
-  labs(title="Figure 1: Faculty Signatories by Position", y="# of Signatories")  
+  labs(title="Figure 1: By Position", y="# of Signatories")  
 ggsave("graphics/figure1.png")
 
 # plot signatories by department 
@@ -59,5 +59,5 @@ facultylist %>%
   geom_bar() +
   coord_flip() + 
   theme_minimal() +
-  labs(title="Figure 2: Faculty Signatories by Department", y="# of Signatories")  
+  labs(title="Figure 2: By Department", y="# of Signatories")  
 ggsave("graphics/figure2.png")

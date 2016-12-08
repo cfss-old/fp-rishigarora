@@ -1,32 +1,125 @@
 ---
-title: "An Inquiry into Faculty Activism"
+title: "A Brief Inquiry into Faculty Activism"
 ---
+_Rishi G. Arora_  
+_Department of Sociology_
 
-Student activism is covered a lot
-Faculty activism less so
+  
+###Introduction
+On December 1, 2016, 390+ faculty members at the University of Chicago sent a letter to Provost Diermeier and President Zimmer concerning the university's response to potential changes to U.S. immigration policy following Donald Trump's presidential election victory. It opens as follows: 
 
-Taking a recent petition as the departure point for the analysis, what factors influence faculty activism?
-  How does tenure influence it? 
-  How does department affiliation affect it? 
+> We, the undersigned faculty, write you to offer concrete proposals toward fulfilling your and the University’s stated commitment to our undocumented students. We are alarmed by President-elect Donald Trump’s declared intention to implement policies that threaten the civil rights and well-being of members of our community. We believe that the University has a clear responsibility in these urgent circumstances. As one of the country’s premier research universities with a large and diverse student body, and with a history of offering support and refuge to members of persecuted minority groups, we hope that the University of Chicago can take a leading role in opposing the measures promised by President-elect Donald Trump and actively defend this institution’s core interests and values.  
 
-Clear that some departments made a more concerted effort - forwarded through listservs
+The letter proposes 9 concrete steps the administration should take to ensure financial, legal and mental health support for students that might be affected. The aim of this project is understand some of the factors that might influence the decision by faculty to engage in campus activism. Motivated by the successes of SNCC and other student organizations during the civil rights movement, social change scholars over the past four decades have deeply studied the impact of student activism on the broader culture. Surprisingly, faculty activism over the same period has been greatly under-examined. This isn't because it's unimportant, but unfortunately, most examinations of faculty activism have tended to focus on ideology, not mobilization (for context, see scholarship around the [science wars](https://en.wikipedia.org/wiki/Science_wars)). 
+
+Using this recent letter as a point of departure, I'm interested in better understanding what factors are involved in faculty decisions to participate in an openly political act. This is not without risk. While tenure evaluations are supposed to be objectively focused on scholarly output, examples of politically-involved academics being denied tenure or losing their positions abound. Anthropologist David Graeber's [case](http://www.nytimes.com/2005/12/28/nyregion/when-scholarship-and-politics-collided-at-yale.html) at Yale is one of the most prominent in recent years.  
+
+In this admittedly provisional analysis, I will examine the tenure status and department affiliation of all faculty signatories to the letter. My hypothesis is that faculty members that have already secured tenure will be overrepresented in comparison to faculty who are on the tenure track but have not yet received it, as well as lecturers and adjunct professors whose positions are not guaranteed. For two reasons, I also anticipate that department affiliation will skew towards the social sciences and humanities. First, immigration is an issue that's treated academically in many of these departments, as opposed to say molecular chemistry. Second, these are considered to be the more liberal divisions within the university. In a 2005 study by [Lichter et al](http://www.cwu.edu/~manwellerm/academic%20bias.pdf) examining the ideological composition of American university faculty members, 81% of humanities scholars and 75% of social scientists considered themselves to hold liberal values. These figures were markedly lower for engineering and business faculty, 51% and 49% respectively. 
+
+***
+
+### Faculty Signatories  
+The data includes the name, department affiliation and position for 392 faculty members who had signed the letter by December 3, 2016. The distribution of positions can be seen in Figure 1. The five largest groups are all either tenured or in tenure track positions. Lecturers represent the highest proportion of non-tenured faculty signatories.
+
+***
+
+
+![](graphics/figure1.png)  
+
+***
+  
+Figure 2 shows the distribution of signatories by department/division. Many faculty members hold multiple appointments in different departments, so they were coded using the first affiliation they listed in their signature line. The fact that  English, History and Social Science Administration are the most represented departments has face validity and supports my initial hypothesis, but Physics leading the pack is quite surprising. My prediction, and this is something that could be tested further by interviewing members of all of the departments, is that some departments circulated the letter on their internal listserv while others didn't. How large an effect this has on overall participation would be a worthwhile inquiry. 
+
+***
+
+![](graphics/figure2.png)  
+
+***
+
+It's good to have a sense of the overall data, but to conduct the analysis I regrouped the data based on tenure status (Non-Tenure, Tenure Track, Has Tenure) and academic division (Humanities, Social Sciences, Physical Sciences, Biological Sciences, and professional degree programs like Law). Figures 3 and 4 show these updated plots and Table 1 provides a summary of tenure status. 
+
+***
+
+__Table 1: Tenure Status of Faculty Signatories__ 
+
+Has Tenure | Tenure Track | Non-Tenure | Not Listed
+------------- | ------------- | ------------- | -------------
+251 | 79 | 46 | 16
+
+***
+
+
+***
+
+![](graphics/figure3.png) 
+
+***
+
+![](graphics/figure4.png)  
+
+***
+
+Figure 5 brings together department affiliation data with tenure status and provides the launching point for our model. The width of the circles represent the number of faculty signatories from each department and the x-axis is ordered by job security. This plot seems to show that the more secure faculty is in their position, the more likely they are to participate in activism. We can see that the largest circles are concentrated on the right side of the chart and that the trend seems to hold for the range of departments represented. The statistical signficance of this finding will be interrogated below. 
+
+***
+
+![](graphics/figure5.png)  
+
+***
+
+### Model
+Up until this point, we've only been analyzing faculty members who actually signed the letter. This critically leaves out half of the data we would need to construct a model for factors influencing the propensity to sign, namely data on all of the faculty members that _didn't_ sign. Since it would be quite tedious to compile data on every faculty member at the university, I instead collected data from six representative departments in the Humanities, Sciences, and Professional Schools. These six are Romance Languages and Literature, Philosophy, Statistics, Human Genetics, Computer Science and the School of Social Service Administration. In total, there are 235 faculty members in the dataset. If I choose to continue researching this question it would be best to compile a more comprehensive dataset, or at the very least, develop a more robust sampling method. Figures 6 and 7 provide an overview of the sample. 
+
+***
+
+![](graphics/figure6.png)  
+
+***
+
+![](graphics/figure7.png)  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Questions for future research: 
   How does participation vary based on type of petition? 
   What is the role of someone sending it through a faculty listserv? 
 
 
-
-Has Tenure | Tenure Track | Non-Tenure | Not Listed
-------------- | ------------- | ------------- | -------------
-251 | 79 | 46 | 16
-
-
-
 I selected 6 departments from the range of formal academic divisions across the university: statistics, romance languages, philosophy, statistics, human genetics, computer science. 
 
 I created a dataset of all faculty from these departments using the university directory and coded whether or not the individual signed the letter. 
 
+***
+
+__Logistic Regression Model Output:__ 
+
+~ | `Estimate` | `Std. Error` | `Z value` | Pr(>`|Z|`) |
+------------- | ------------- | ------------- | -------------| ------------- |
+`(Intercept)` | -2.1017 | 0.3896 | -5.394 | 6.87e-08*** |
+`d Tenure Track` | 0.7498 | 0.4824 | 1.554 | 0.120103 |
+`d Has Tenure` | 0.3951 | 0.3872 | 1.021 | 0.307460 |
+`d Professional` | 1.0732 | 0.4377 | 2.452 | 0.014203* |
+`d Humanities` | 1.2129 | 0.3559 | 3.408 | 0.000655*** |
+
+Significance Level: 0`***` ; 0.05`*`
+
+***
+
+
+
+![](graphics/figure4.png)
 
 
 
