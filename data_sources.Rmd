@@ -4,9 +4,7 @@ title: "Data & Sources"
 
 __Data__
 
-The tidy dataset used for this analysis includes the position and department affiliation of 392 faculty signatories (as of 12/03/16). Where faculty listed multiple department affiliations, in almost all cases, the first one listed was maintained.  
-
-The data (names and affiliation information) was copied into excel from the original [letter](https://docs.google.com/forms/d/e/1FAIpQLSdozFBhNzeHZPQAywaxG9YHOx9BYBxL3dxPyDXFPV6fXIbuqg/viewform?c=0&w=1) posted online and was cleaned before being imported into RStudio for analysis. Department affiliations and position categories were combined where appropriate (e.g. neurobiology was coded as biology and uniquely named professorships were binned into a single category).
+The tidy dataset used for this analysis includes the position and department affiliation of 392 faculty signatories (as of 12/03/16). Where faculty listed multiple department affiliations, in almost all cases, the first one listed was maintained. Department affiliations and position categories were combined where appropriate (e.g. neurobiology was coded as biology and uniquely named professorships were binned into a single category).
 
 ***
 
@@ -78,8 +76,7 @@ _Departments_
 
 ***
 
-
-
-INFORMATION ON FACULTY CLASSIFICATION: https://provost.uchicago.edu/handbook/academic-appointments/ranks-statute-11
-ACADEMIC DEPARTMENTS: http://www.uchicago.edu/academics/departments/
-FULL FACULTY IN EACH DEPARTMENT: https://directory.uchicago.edu/organizations/search
+Data Sources:
+["Letter to University of Chicago Administration Concerning Changes to U.S. Immigration Policy"](https://docs.google.com/forms/d/e/1FAIpQLSdozFBhNzeHZPQAywaxG9YHOx9BYBxL3dxPyDXFPV6fXIbuqg/viewform?c=0&w=1)
+[Tenure Status Classification](https://provost.uchicago.edu/handbook/academic-appointments/ranks-statute-11)
+[Deparment Faculty Rosters](https://directory.uchicago.edu/organizations/search)

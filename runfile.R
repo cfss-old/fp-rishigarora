@@ -20,5 +20,5 @@ source("01 - load data.R")
 source("02 - data wrangling.R")
 source("03 - model.R")
 
+rmarkdown::render_site
 
-rmarkdown::render("03_lotr-report.Rmd", output_dir = "output")

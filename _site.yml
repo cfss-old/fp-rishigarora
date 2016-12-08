@@ -1,9 +1,15 @@
-name: "my-website"
+name: "facultyactivism"
 output_dir: "."
 navbar:
-  title: "My Website"
+  title: "A Brief Inquiry into Faculty Activism"
   left:
     - text: "Home"
       href: index.html
+    - text: "Data & Sources"
+      href: data_sources.html
     - text: "About"
       href: about.html
+output:
+  html_document:
+  theme: spacelab
+
