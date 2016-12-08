@@ -1,5 +1,10 @@
 ---
 title: "About"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cosmo
 ---
   
 This website fulfills the final project requirements for [MACS30500](https://uc-cfss.github.io/). 

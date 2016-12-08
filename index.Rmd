@@ -1,10 +1,12 @@
 ---
 title: "An Inquiry into Faculty Activism"
+author: "Rishi G. Arora"
 output:
   html_document:
     toc: true
     toc_float: true
----
+    theme: cosmo
+---  
   
 ###Introduction
 On December 1, 2016, 390+ faculty members at the University of Chicago sent a [letter](https://docs.google.com/forms/d/e/1FAIpQLSdozFBhNzeHZPQAywaxG9YHOx9BYBxL3dxPyDXFPV6fXIbuqg/viewform?c=0&w=1) to Provost Diermeier and President Zimmer concerning the university's response to potential changes to U.S. immigration policy following Donald Trump's presidential election victory. It opens as follows: 
@@ -89,13 +91,13 @@ __Logistic Regression Model Output:__
 
 ~ | `Estimate` | `Std. Error` | `Z value` | Pr(>`|Z|`) |
 ------------- | ------------- | ------------- | -------------| ------------- |
-`(Intercept)` | -2.1017 | 0.3896 | -5.394 | 6.87e-08*** |
+`(Intercept)` | -2.1017 | 0.3896 | -5.394 | 6.87e-08`***` |
 `d Tenure Track` | 0.7498 | 0.4824 | 1.554 | 0.120103 |
 `d Has Tenure` | 0.3951 | 0.3872 | 1.021 | 0.307460 |
-`d Professional` | 1.0732 | 0.4377 | 2.452 | 0.014203* |
-`d Humanities` | 1.2129 | 0.3559 | 3.408 | 0.000655*** |
+`d Professional` | 1.0732 | 0.4377 | 2.452 | 0.014203`*` |
+`d Humanities` | 1.2129 | 0.3559 | 3.408 | 0.000655`***` |
 
-Significance Level: 0`***` ; 0.05`*`
+Significance Level: 0.001`***` ; 0.05`*`
 
 ***
 
